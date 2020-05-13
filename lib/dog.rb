@@ -15,7 +15,12 @@ class Dog
   def self.all 
     @@all 
   end 
+  
   def print_all 
     @@all.all {|pup| puts "#{pup}"}
+  end 
+  
+  def clear_all 
+    @@all = []
   end 
 end 
